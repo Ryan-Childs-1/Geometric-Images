@@ -403,7 +403,7 @@ h, w = img.shape[:2]
 # Geometry controls
 st.sidebar.divider()
 st.sidebar.header("2) Canonical Geometry (Shared Across Images)")
-n_points = st.sidebar.slider("Base points (not counting border)", 50, 2500, 500, 25)
+n_points = st.sidebar.slider("Base points (not counting border)", 50, 25000, 500, 25)
 edge_weight = st.sidebar.slider("Edge emphasis", 0.0, 1.0, 0.65, 0.05)
 edge_thresh = st.sidebar.slider("Edge threshold (Sobel)", 1.0, 255.0, 70.0, 1.0)
 border_pts = st.sidebar.slider("Border points per edge", 4, 200, 35, 1)
